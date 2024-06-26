@@ -1,0 +1,56 @@
+[
+{
+    "id":1,
+    "name":"simple cake",
+    "price":1500,
+    "image":"birthday1.jpg"
+},
+{
+    "id":2,
+    "name":"chocolate icing with macaroons",
+    "price":1800,
+    "image":"birthday9.jpg"
+},
+{
+    "id":3,
+    "name":"stary pink fondant",
+    "price":2000,
+    "image":"birthday3.jpg"
+},
+{
+    "id":4,
+    "name":"leafy fantasy",
+    "price":1500,
+    "image":"birthday5.jpg"
+},
+{
+    "id":5,
+    "name":"cake frenzy",
+    "price":1500,
+    "image":"birthday8.jpg"
+},
+{
+    "id":6,
+    "name":"elegant birthday",
+    "price":1500,
+    "image":"birthday2.jpg"
+},
+{
+    "id":7,
+    "name":"rosy birthday",
+    "price":1500,
+    "image":"birthday6.jpg"
+},
+{
+    "id":8,
+    "name":"rosy elegance",
+    "price":2500,
+    "image":"birthday4.jpg"
+},
+{
+    "id":9,
+    "name":"heavenly birthday",
+    "price":1500,
+    "image":"birthday10.jpg"
+}
+]

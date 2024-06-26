@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>my cake house!!</title>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo"><img src="logo.jpg"></a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#catalogue">CATALOGUE</a>
+            <a href="#about">ABOUT</a>
+            <a href="#review">REVIEWS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="icons">
+            <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="carticon"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p>
+            </div>
+            <div class="menuicon"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="searchform">
+            <input type="search" name="search"id="searchbox" placeholder="search here..."
+            onkeyup="search()">
+            <label for="searchbox" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+        <div class="cartitemscontainer" id="cartitemscontainer">
+                   <h1>SHOPPING CART</h1>
+                   <div class="cartitem">
+                         <div class="item">
+                             <div class="images">
+                                <img src="birthday7.jpg" alt="">
+                             </div>
+                             <div class="name">
+                                NAME
+                             </div>
+                               <div class="totalprice">
+                                kshs2000
+                               </div>
+                               <div class="quantity">
+                                <span class="minus"><</span>
+                                <span>1</span>
+                                <span class="add">></span>
+                               </div>
+                         </div>
+                   </div>
+                    <div class="buttons">
+                        <button class="btn" id="ordernow">ordernow!</button>
+                         <button class="btn" id="close">close</button>
+                    </div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="hero">
+            <h3>life is short eat cake!!</h3>
+            <p>Life is too short to skip dessert, so why not indulge in something sweet?
+                 At Sweet Escape Bakery, we're here to satisfy your cravings and sweeten your day.
+                  Life may be fleeting, but the joy of cake is everlasting
+                </p>
+                 </div>
+    </section>
+    <section class="catalogue" id="catalogue">
+        <h3 class="title">birthday <span>cakes</span></h3>
+        <section class="wrapper">
+            <div class="cakecard">
+                <img src="birthday1.jpg" alt="">
+                <h3>simple cake</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+           <div class="cakecard">
+                <img src="birthday9.jpg" alt="">
+                <h3>chocolate icing with macaroons</h3>
+                <div class="price2">kshs1800/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday3.jpg" alt="">
+                <h3>stary pink fondant</h3>
+                <div class="price2">kshs2000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday5.jpg" alt="">
+                <h3>leafy fantasy </h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday8.jpg" alt="">
+                <h3>cake frenzy</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday2.jpg" alt="">
+                <h3>elegant birthday</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday6.jpg" alt="">
+                <h3>rosy birthday</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday4.jpg" alt="">
+                <h3>rosy elegance</h3>
+                <div class="price2">kshs2500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="birthday10.jpg" alt="">
+                <h3>heavenly birthday</h3>
+                <div class="price2">kshs2300/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+        </section>
+        <h3 class="title">wedding <span>cakes</span></h3>
+        <section class="wrapper">
+            <div class="cakecard">
+                <img src="wedding1.jpg" alt="">
+                <h3>golden roses elegance</h3>
+                <div class="price2">kshs4500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+           <div class="cakecard">
+                <img src="wedding2.jpg" alt="">
+                <h3>royal blue wild wedding </h3>
+                <div class="price2">kshs5500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding3.jpg" alt="">
+                <h3>simple elegance</h3>
+                <div class="price2">kshs2500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding4.jpg" alt="">
+                <h3>classy roses!
+                </h3>
+                <div class="price2">kshs4000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding5.jpg" alt="">
+                <h3>all white layered cake</h3>
+                <div class="price2">kshs3000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding6.jpg" alt="">
+                <h3>nude layered lace with roses</h3>
+                <div class="price2">kshs4500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding7.jpg" alt="">
+                <h3>loop heaven</h3>
+                <div class="price2">kshs6500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding8.jpg" alt="">
+                <h3>rosy elegance</h3>
+                <div class="price2">kshs6000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="wedding10.jpg" alt="">
+                <h3>flower fantasy</h3>
+                <div class="price2">kshs4500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            </section>
+            <h3 class="title">graduation <span>cakes</span></h3>
+            <section class="wrapper">
+                <div class="cakecard">
+                    <img src="graduation1.jpg" alt="">
+                    <h3>rosy graduation</h3>
+                    <div class="price2">kshs1500/=</div>
+                     <button class="btn">add to cart</button>
+                </div>
+               <div class="cakecard">
+                    <img src="graduation2.jpg" alt="">
+                    <h3>nude class</h3>
+                    <div class="price2">kshs2500/=</div>
+                     <button class="btn">add to cart</button>
+                </div>
+                <div class="cakecard">
+                    <img src="graduation3.jpg" alt="">
+                    <h3>boss cake</h3>
+                    <div class="price2">kshs2500/=</div>
+                     <button class="btn">add to cart</button>
+                </div>
+        <div class="cakecard">
+                <img src="graduation9.jpg" alt="">
+                <h3>simple graduation cake</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="graduation4.jpg" alt="">
+                <h3>golden graduation</h3>
+                <div class="price2">kshs3000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="graduation5.jpg" alt="">
+                <h3>green garden graduation</h3>
+                <div class="price2">ksh3000/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="graduation6.jpg" alt="">
+                <h3>gold dust graduation</h3>
+                <div class="price2">kshs2500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="graduation7.jpg" alt="">
+                <h3>lilac </h3>
+                <div class="price2">kshs2500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="graduation8.jpg" alt="">
+                <h3>five star graduation</h3>
+                <div class="price2">kshs2500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+        </section>
+        <h3 class="title">chocolate <span>cakes</span></h3>
+        <section class="wrapper">
+            <div class="cakecard">
+                <img src="chocolate1.jpg" alt="">
+                <h3>simple rose</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+           <div class="cakecard">
+                <img src="chocolate2.jpg" alt="">
+                <h3>macaroon delight</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate3.jpg" alt="">
+                <h3>chocolate haven</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate4.jpg" alt="">
+                <h3>sprinkle haven</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate5.jpg" alt="">
+                <h3>chocolate gate</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate6.jpg" alt="">
+                <h3>layered chocolate</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate7.jpg" alt="">
+                <h3>ferero rocher haven</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate8.jpg" alt="">
+                <h3>berry heaven</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+            <div class="cakecard">
+                <img src="chocolate9.jpg" alt="">
+                <h3>chocolatey chocolate</h3>
+                <div class="price2">kshs1500/=</div>
+                 <button class="btn">add to cart</button>
+            </div>
+        </section>
+    <section>
+        <section class="about" id="about">
+                <h1 class="title"><span>about</span>us</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="background8.webp">
+                    </div>
+                    <div class="content2">
+                        <h3>about sweet memories bakery</h3>
+                        <p>Welcome to Sweet Memories Bakery, where every confection tells a story and every bite is a taste of tradition. Founded in 2000, our bakery has been a cornerstone of the community for generations, serving up sweet delights that have become cherished memories for families and friends alike.
+                            our journey began with Ruguru Mureithi, whose passion for baking and dedication to quality laid the foundation for what Sweet Memories Bakery stands for today. From humble beginnings in a small kitchen to a bustling storefront beloved by locals, our bakery has remained true to its roots while embracing innovation and creativity.
+                            But Sweet Memories Bakery is more than just a place to satisfy your sweet tooth; it's a gathering place where memories are made and traditions are honored. Whether you're celebrating a special occasion or simply craving a treat, we invite you to step into our bakery and experience the magic for yourself.
+                            Thank you for being a part of our journey, and here's to many more sweet memories together!
+                            </p>
+                    </div>
+                </div>
+        </section>
+        <section class="review" id="review">
+            <h1 class="title">customer's <span>testimonials</span></h1>
+            <div class="wrapper2">
+                <div class="reviewcard">
+                    <img src="quotationmarks.jpg">
+                    <p>I recently had the pleasure of trying a variety of cakes from this shop at a friend's party, and I must say, each one was a masterpiece.
+                         The attention to detail in both appearance and taste is unmatched. Highly recommend!</p>
+                         <img class="customer" src="Kayla-Person.jpg">
+                         <h3>Kayla Dawson</h3>
+                         <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                         </div>
+                </div>
+                <div class="reviewcard">
+                    <img src="quotationmarks.jpg">
+                    <p>The cake I ordered for my wife's anniversary was a hit! The staff was so helpful in assisting me with
+                         the design and flavor choices. The end result was not only visually stunning but also incredibly delicious. Thank you!</p>
+                         <img class="customer" src="dwaynetherockperson.jpg">
+                         <h3>Dwayne Johnson</h3>
+                         <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                         </div>
+                </div>
+                <div class="reviewcard">
+                    <img src="quotationmarks.jpg">
+                    <p>Had a last-minute order for a birthday cake, and this shop saved the day! Despite the short notice, they were able to accommodate my request
+                         and delivered a delicious cake that was a hit at the party. Thank you for your exceptional service!</p>
+                         <img class="customer" src="taylorswiftperson.jpg">
+                         <h3>Taylor Swift</h3>
+                         <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                         </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="title"><span>contact</span>us</h1>
+            <div class="contents">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.84714422204!2d36.8006797!3d-1.2642089999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176a7c355d1b%3A0x12dbab0ba1ffb147!2sThe%20Foundry%20Africa%20-%20Viking%20House!5e0!3m2!1sen!2ske!4v1718260463740!5m2!1sen!2ske" 
+                loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <form action="" style="padding: 11px; text-align: center;">
+                    <h3>get in touch</h3>
+                    <div class="inputbox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" name="name" placeholder="entername">
+                    </div>
+                    <div class="inputbox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" name="email" placeholder="enteremail">
+                    </div>
+                    <div class="inputbox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" name="phone" placeholder="enterphonenumber">
+                    </div>
+                    <a href="" class="btn">contact now</a>
+                 </form>
+            </div>
+        </section>
+   <footer class="footer">
+    <div class="socialmedia">
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+        <a href="" class="fab fa-pinterest"></a>
+    </div>
+    <div class="links">
+            <a href="#home">HOME</a>
+            <a href="#catalogue">CATALOGUE</a>
+            <a href="#about">ABOUT</a>
+            <a href="#review">REVIEWS</a>
+            <a href="#contact">CONTACT</a>
+    </div>
+    <div class="credits">
+     thankyou for shopping with us <span>come back again!!</span>
+    </div>
+   </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
